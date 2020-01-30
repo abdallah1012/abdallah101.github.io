@@ -1,0 +1,56 @@
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .titlecss{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  /* li {
+    list-style: square;
+  } */
+  
+.list{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: circle;
+}
+
+#date {
+    font-size: 23px;
+    font-family: cursive;
+    font-weight: bold;
+  }
+
+  /*
+  #time{
+      font-family: cursive;
+  } */
+
+  .timeanddate{
+
+    font-size: 23px;
+    font-family: cursive;
+    font-weight: bold;
+
+  }
+
+  #time{
+      font-family: cursive;
+  }
+  #datee{
+      font-family: cursive;
+      /* font-weight: bold; */
+  }
+
+  #testin{
+      font-weight: bold;
+      font-size: 23px;
+  }
+
+  .flist{
+      list-style-type: square;
+  }
