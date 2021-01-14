@@ -1,18 +1,41 @@
 
+.TopView {
 
+  height: 250px;
+  background-image: url("wallpaper.png");
+  text-align: center;
+  background-repeat: no-repeat;
+  /* margin: -8px; */
+  border-style: solid;
+  border-bottom: blue;
+  
+
+}
+
+.TopViewText{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow:
+       3px 3px 0 rgb(5, 34, 114),
+     -1px -1px 0 rgb(5, 34, 114),  
+      1px -1px 0 rgb(5, 34, 114),
+      -1px 1px 0 #0048e4,
+       1px 1px 0 #0048e4;
+  font-weight: bold;
+}
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    margin: 0;
   }
   
   .titlecss{
     font-size: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-  /* li {
-    list-style: square;
-  } */
-  
+
 .list{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,11 +47,6 @@ body {
     font-family: cursive;
     font-weight: bold;
   }
-
-  /*
-  #time{
-      font-family: cursive;
-  } */
 
   .timeanddate{
 
@@ -55,4 +73,161 @@ body {
       list-style-type: square;
   }
 
-  /* z */
+
+
+  #wrapper{
+    overflow: auto;
+  }
+
+ #p1{
+   border-radius: 25px;
+   margin-right: 50px;
+   padding: 20px;
+   border-style: double;
+   border-width: 5px;
+   width: 200px;
+  float: left;
+  background-color:lightblue
+  
+ }
+ #p2{
+  border-radius: 25px;
+  padding: 20px;
+   border-width: 5px;
+  border-style: double;
+   width: 200px;
+   float: left;
+   background-color: brown;
+ }
+
+ #firstwrapper{
+   overflow: auto;
+ }
+
+ #hide{
+   width : 200px;
+  float: left;
+  margin-right: 100px;
+ }
+ #anim{
+   width: 200px;
+  float: left;
+ }
+
+ .TD{
+   margin-left: 20px;
+ }
+
+ .tab {
+   /* margin: -8px; */
+   overflow: hidden;
+   border: 1px solid #ccc;
+   background-color: #f1f1f1;
+   border-bottom-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+ }
+
+ .tab button{
+   border-radius: 25px;
+   background-color: inherit;
+   float: left;
+   border: 1px solid #ccc;
+   outline: none;
+   cursor: pointer;
+   padding: 14px 16px;
+   transition: 0.3s;
+   background-color: rgb(5, 34, 114); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+ }
+
+ .tab button:hover{
+   background-color: #ddd;
+ }
+
+ .tab button.active{
+
+  background-color: #ccc;
+
+ }
+
+ .tabcontent{
+   text-align: center;
+   display: none;
+   padding: 6px 12px;
+   border: 1px solid #ccc;
+   border-top: none;
+   /* border-bottom-right-radius: 25px;
+   border-bottom-left-radius: 25px; */
+   border-radius: 25px;
+   
+ }
+
+ .tabcontent ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* For IE, the outcast */
+  zoom:1;
+  *display: inline
+ }
+
+ .tabcontent li{
+   padding: 2px 5px;
+  border: 1px solid black;
+ }
+
+
+ #tabtext {
+
+  display: block;
+  margin-top: 11px;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 30px;
+
+}
+
+.lower{
+  background-image: url("backgroundlower.png");
+}
+
+.lower, .lastwrap:after{
+  
+  height: 180px;
+}
+
+.lowertext{
+  color: rgb(187, 187, 187);
+  margin-left: 40%;
+  /* margin-top: 20px; */
+  
+}
+
+.lowertext ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* For IE, the outcast */
+  zoom:1;
+  *display: inline
+ }
+
+ .lowertext li{
+   padding: 2px 5px;
+  
+ }
+
+.lastwrap:after{
+  content: "";
+  display: block;
+}
