@@ -1,22 +1,62 @@
 
+.thumbnails{
+
+	flex-basis: 40%;
+	max-width: 100px;
+
+}
+
 .TopView {
 
   height: 250px;
   background-image: url("wallpaper.png");
-  text-align: center;
   background-repeat: no-repeat;
   /* margin: -8px; */
   border-style: solid;
   border-bottom: blue;
+  align-items: center;
+ justify-content: center
   
 
 }
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("wallpaper.png");
+	background-repeat: no-repeat;
+	height: 250px;
+	
+	
+}
+
+.image {
+	
+	flex-basis: 40%;
+	max-width: 100%;
+	border-radius: 50%;
+	border: 5px solid rgb(5, 34, 114);
+	
+}
+
+
+.text{
+	
+	font-size:20px;
+	padding-left:5px;
+	color: white;
+	-webkit-text-stroke: 1px rgb(5, 34, 114);
+	
+}
+
 
 .TopViewText{
   padding-top: 30px;
   text-align: center;
   font-size: 50px;
   color: white;
+  
   text-shadow:
        3px 3px 0 rgb(5, 34, 114),
      -1px -1px 0 rgb(5, 34, 114),  
@@ -78,26 +118,44 @@ body {
   #wrapper{
     overflow: auto;
   }
+html {
+	height:100%;
+	width:100%;
+	}
+body {
+	height:100%;
+	width:100%;
+	display:table;
+	table-layout:fixed;
+	margin:0 auto;
+	}
+.row {
+    display:table-row;
+    background:rgb(5, 34, 114)
+}
+div.row {
+    height:100%;
+    background:pink
+}
 
+  
  #p1{
    border-radius: 25px;
    margin-right: 50px;
-   padding: 20px;
-   border-style: double;
-   border-width: 5px;
+   padding: 20px; 
    width: 200px;
-  float: left;
-  background-color:lightblue
+  
+  display: none;
+  
   
  }
  #p2{
-  border-radius: 25px;
-  padding: 20px;
-   border-width: 5px;
-  border-style: double;
+   border-radius: 25px;
+   margin-right: 50px;
+   padding: 20px;
    width: 200px;
-   float: left;
-   background-color: brown;
+  
+  display: none;
  }
 
  #firstwrapper{
@@ -109,6 +167,13 @@ body {
   float: left;
   margin-right: 100px;
  }
+ 
+ #hide2{
+   width : 200px;
+  float: left;
+  margin-right: 100px;
+ }
+ 
  #anim{
    width: 200px;
   float: left;
@@ -129,25 +194,22 @@ body {
 
  .tab button{
    border-radius: 25px;
-   background-color: inherit;
    float: left;
-   border: 1px solid #ccc;
    outline: none;
    cursor: pointer;
-   padding: 14px 16px;
    transition: 0.3s;
-   background-color: rgb(5, 34, 114); /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+   background-color: rgb(5, 34, 114);
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin: 4px 2px;
+   cursor: pointer;
+   -webkit-transition-duration: 0.4s;
+   transition-duration: 0.4s;
  }
 
  .tab button:hover{
@@ -198,7 +260,7 @@ body {
 }
 
 .lower{
-  background-image: url("backgroundlower.png");
+  background-color: rgb(5, 34, 114);
 }
 
 .lower, .lastwrap:after{

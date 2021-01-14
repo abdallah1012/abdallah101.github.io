@@ -8,25 +8,28 @@
     <link rel= "stylesheet" href = "./main.css">
 </head>
 
-<body onload="WebLogin()">
 
 
-    <div class = "TopView">
-
-        <div class = TopViewText>
-            <p>&lt; Hello World! &gt;</p>
-        </div>
-
-    </div>
-
+<body >
+    
+	<div class="container">
+		<div>
+			<img src="./assets/images/dp.jpg" class = "image">
+		</div>
+		<div class="text">
+			<h1> Abdallah Dandashli </h1>
+		</div>
+	</div>
+	
+	
 
     <div class = "tab">
         <button class = "tablink" onclick = "openS(event,'about')">About Me</button>
         <button class = "tablink" onclick = "openS(event, 'Websites')">Websites</button>
-        <button class = "tablink" onclick = "openS(event,'animations')">JQ animations</button>
-        <button class = "tablink" onclick = "openS(event,'database')">Login History</button>
-        <button class = "tablink" onclick = "openS(event,'login')">Login</button>
-        <div id = "tabtext">Testing The Tab With Text</div>
+        <button class = "tablink" onclick = "openS(event,'Projects')">Projects</button>
+        <button class = "tablink" onclick = "openS(event,'Experience')">Work Experience</button>
+        <!--<button class = "tablink" onclick = "openS(event,'login')">Login</button>-->
+        <div id = "tabtext"></div>
     </div>
 
 
@@ -49,68 +52,149 @@
 
     <div id = "about" class = "tabcontent">
 
-        <h3>This is a simple about me page</h3>
-        <p>I am a student at aub and working towards my Bachelor's in CCE</p>
+        <h3>I am a Computer and Communications Engineering student at the <a href = "https://www.aub.edu.lb/" style="color: #0645AD" target='_blank'><u>American University of Beirut</u></a></h3>
+        <p align="justify">I am a technology enthusiast that is always curious to see and learn what has been invented and what challenges are being tackled. I always try to learn techniques and mechanisms to solve problems with the intent of creating my own way of solving, and I always like learning how to use new software.
+
+			My interest grew as the video game industry grew and was the main reason I am pursuing a career in software development although there is a growing interest in machine learning and data science, both of which are constantly growing fields which have a passionate community that doesn’t say no to a challenge.
+
+			I like working in groups although i am more of a support person since i personally see this role to be more important than most, where i would be given a task to finish, keep track with the entire project and give feedback to what is better and what could be improved. </p>
+		</p>
 
     </div>
 
 
-    <div id = 'Websites' class = "tabcontent">
-        <h3>These are buttons used to take you to different websites</h3>
-        <form action="https://www.youtube.com" target="_blank">
-            <button name = "YoutubeBB" type="submit">Go Youtube</button>
-        </form>
+    <div id = 'Websites' class = "tabcontent">		
+		 <a class="externalLinks" href="https://www.linkedin.com/in/abdallah0dandashli/" target='_blank'><img class = "thumbnails" src  ="./assets/images/linkedin.png"></a>
+		 <a class="externalLinks" href="https://github.com/abdallah101" target='_blank'><img class = "thumbnails" src  ="./assets/images/github.png"></a>
+		 <a class="externalLinks" href="./assets/ADResume.pdf" target='_blank'><img class = "thumbnails" src  ="./assets/images/CV.png"></a>
     </div>
 
-    <div id = 'animations' class = "tabcontent">
-       
-        <div id = "firstwrapper">
-            <br>
-            <div>
-                <button id = "hide">Hide/Show</button>
-            </div>
-        
-            <div>
-                <button id = "anim">Animate</button>
-            </div>
-        
-            </div>
-        
-        
-            <div id = "wrapper">
-            <div>
-            <p id = "p1">This is the paragraph <br>being hidden and shown</p>
-            </div>
-        
-            <div>
-                <p id = "p2">Trying Other Div</p>
-            </div>
-            </div>
-
+    <div id = 'Projects' class = "tabcontent">
+	   <h3> Projects: </h3>
+	   <hr>
+	   <div style = " overflow: hidden;">
+			<div style = "float:left;width:50%;">
+				<h3>Dardish Code</h3>
+				<img src="./assets/images/NLP.jpg" style = "height: 150px; width:50%;">
+				<p>I developed a Decision Tree Machine Learning Model capable of extracting key information from the documentation of code using Natural Language Processing Techniques. 
+				</p>
+				<a href = "./assets/DardishCode.pdf" style="color: #0645AD" target='_blank'><u>Research Paper</u></a>	
+			</div>
+		 
+			<div style = "float:right;width:50%;">
+				<h3>Snake Game</h3>
+				<img src="./assets/images/snake.jpg" style = "height: 150px; width:50%;">
+				<p>Traditional snake game done using PyQt5 and added to it an AI with different linear machine learning models in an attempt to achieve higher scores.	
+				</p>
+				<a href = "https://drive.google.com/file/d/1c-EJqaXf5m7mVkLTl-eDYqHLq9qOocU3/view?usp=sharing" style="color: #0645AD" target='_blank'><u>Download Game</u></a>
+			</div>
+		</div>
+		<br><hr><br>
+		<div style = " overflow: hidden;">
+			<div style = "float:left;width:50%;">
+				<h3>Cinema</h3>
+				<p>An application that allows users to sign up as students or professors and upload or watch movies along with other features. This was done using PyQt5 and MySQL.
+				</p>
+			
+				<div>	
+					<br>
+					<div>
+						<button id = "hide">Hide/Show Images</button>
+					</div> 
+					<div>
+						<div id = "p1">
+							<img  src="./assets/images/Cinema1.jpg">
+							<img src="./assets/images/Cinema2.jpg">
+							<img  src="./assets/images/Cinema3.jpg">
+							<img  src="./assets/images/Cinema4.jpg">
+							<img  src="./assets/images/Cinema5.jpg">
+							<img  src="./assets/images/Cinema6.jpg">
+						</div>
+					</div>	
+				</div>				
+			</div>
+			<div style = "float:right;width:50%;">
+				<h3>Ladders & Snakes + Cabbo </h3>
+				<p>Application that contains the games Ladders & Snakes and Cabbo with features as: Resuming a game, viewing history, creating a custom ladders & snakes board, playing vs AI or locally versus another player. This was done using C++ QT on Linux.	
+				</p>
+				<div>
+						<button id = "hide2">Hide/Show Images</button>
+					</div>
+				<div>	
+					<br>
+					 
+					<div>
+						<div id = "p2">
+							<img  src="./assets/images/lad1.jpg">
+							<img src="./assets/images/lad2.jpg">
+							<img  src="./assets/images/lad3.jpg">
+							<img  src="./assets/images/cabo.jpg">
+							
+						</div>
+					</div>	
+				</div>	
+				
+			</div>
+	   </div>
+	   <br><hr><br>
+	   <div style = " overflow: hidden;">
+			<div style = "float:left;width:50%;">
+				<h3>Airport Reservation System</h3>
+				<img src="./assets/images/javafx.png" style = "height: 150px; width:30%;">
+				<p>Online application that allows pilots to reserve a station at an aiport. This was created using JavaFx and MySQL and socket programming.
+				</p>
+			</div>
+			
+			<div style = "float:left;width:50%;">
+				<h3>Tic-Tac-Toe</h3>
+				<img src="./assets/images/tic.jpg" style = "height: 150px; width:30%;">
+				<p>C implementation of tic-tac-toe on linux between 2 AI players using multi-threading and another using forking and mutex locks.
+				</p>
+			</div>
+		 
+	   </div>
     </div>
 
-    <div id = "database" class = "tabcontent">
+    <div id = "Experience" class = "tabcontent">
 
-        <h3>The following are your login history: </h3>
-        <ul>
-            <li>N/A currently</li>
-        </ul>
+        <h3>Experience: </h3>
+        <hr>
 
-    </div>
+		<div>
+			<h3>Software Developer</h3>
+			<img  src="./assets/images/ibc.jpg">
+			<p>I Interned at "Inspire Business Consult" as a software developer. My duties were learning XML, XSD, JAXB, SQL, HTML, CSS, JS, JSP, JSF and IBM's Queue Manager. I was also taught how to customize the FTI software (Fusion Trade Innovation) which is a base software customized in both front and back-end to achieve a Bank's needs.
+			</p>
+			<a href = "./assets/LetterFromEmployer.pdf" style="color: #0645AD" target='_blank'><u>Employer Feedback</u></a>
+		</div>
+		<br><hr><br>
+		<div>
+			<h3>Research Assistant for an NLP project</h3>
+			<img  src="./assets/images/nlpres.png" style = "width:200px;">
+			<p>I Worked for almost a year on a research with Professor <a href = "https://www.aub.edu.lb/pages/profile.aspx?memberId=fz11" style="color: #0645AD" target='_blank'><u>Fadi Zaraket</u></a> where I was responsible for Parsing Tweet data and formatting them in order to pass them to a machine learning model which would be trained to classify tweets under different categories.
+			My job consisted of identifying stop words and "garbage" in tweets then remove them in 2 different languages, then find their lemmas. Furthermore I had to create several different models for word vectors of our data (one of the models being created using google's word2vec) then finally create a machine learning model that uses these as input and outputs to which category the tweet belongs to.
+			</p>
+		</div>
+	
+	
+	</div>
 
-    <!-- <h1 class = "titlecss">Task Timeline</h1> -->
+    
+	
+	
+	
     <div class  = "TD">
-    <p id = 'date'>Time and Date:</p>
-    <ul class = "flist">
-        <li id = 'datee'></li>
-        <li id = 'time'></li>
-    </ul>
-    </div>
-    <br><br>
+		<p id = 'date'>Time and Date:</p>
+			<ul class = "flist">
+				<li id = 'datee'></li>
+				<li id = 'time'></li>
+			</ul>
+	</div>
+    
     
     <div class = "lastwrap"></div>
 
-    <footer class = "lower">
+    <footer class = "row">
         <div class = "lowertext">
             <br>
             <p>Contact Me at:</p>
@@ -120,18 +204,10 @@
                 <li>+961/70129892</li>
             </ul>
         </div>
+		<br><br>
     </footer>
 
-    <!-- <div class = "lower">
-        <div class = "lowertext">
-            <p>Contact Me at:</p>
-            <ul>
-                <li>abdallah1012@outlook.com</li>
-                <li>ayd06@mail.aub.edu</li>
-                <li>+961/70129892</li>
-            </ul>
-        </div>
-    </div> -->
+
     
 
     <script src="app.js"></script>
