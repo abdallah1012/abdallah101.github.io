@@ -27,6 +27,18 @@ $(document).ready(function(){
         }
 
       });
+	  
+	  	 $("#hide3").click(function(){
+
+        if($("#p3").is(":visible")){
+          $("#p3").slideToggle(function(){
+            
+          });   
+        }else{
+          $("#p3").slideToggle()
+        }
+
+      });
       
     
       
